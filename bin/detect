@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
+set -ex
+
+ls -la $1
+echo "========"
+ls -la $1/frontend-elm
 
 if [ -f $1/frontend-elm/package.json ]; then
   echo "Node.js"
